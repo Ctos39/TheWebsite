@@ -1,0 +1,507 @@
+:root {
+    --accent-pink: #FC4A82; 
+    --accent-blue: #5155FD;
+    --dark-box: rgba(30, 27, 40, 0.7); 
+    --darkish-box: rgba(48, 44, 62, 0.7);
+    --background-notblack: #13111A;
+    --off-white:  #D9D9D9;
+    --inter_section_padding: 24px;
+    
+  }
+
+body{   
+    margin: 0;
+    background-color: #13111A;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
+    height: 100%;
+
+}
+/* wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww test of css colour spot scroll and animations */
+
+
+
+
+
+
+/* wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww test of css colour spot scroll */
+
+
+.grand_wrap{
+    padding-top: 40px;
+    padding-inline: 20%;
+    /* padding-inline: clamp(10%, 20%, 50%); */
+
+    /* background: 
+    radial-gradient(circle at 0% 5%, #5154fdc3 , #08080b4e 25%),
+    radial-gradient(circle at 85% 35%, #fc4a8272 , #08080b4e 25%),
+    radial-gradient(circle at 20% 60%, #fc4a8274 , #08080b4e 25%),
+    radial-gradient(circle at 80% 80%, #5154fd80 , #08070b0b 20%);  */
+    /* background-blend-mode: screen; */
+    /* height: 220vh; Full viewport height */
+    transform: translateZ(0px);
+}
+
+.parallax {
+    height: 100vh;
+    overflow-x: hidden;
+    perspective: 1px;
+}
+  
+
+.parallax-layer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+  
+header {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    transform-style: preserve-3d;
+    z-index: -1;
+}
+.blue1 {
+    width: 100%;
+    height: 100rem;
+    transform: translateZ(-2px) scale(3);
+    min-height:220vh;
+    background: 
+          radial-gradient(circle at 0% 15%, #5154fdc3 , #08080b00 25%);
+    background-blend-mode: screen;
+}
+
+  
+.red1 {
+    background: 
+    radial-gradient(circle at 85% 35%, #fc4a8272 , #08080b00 25%);
+    background-blend-mode: screen;
+    width: 100%;
+    height: 100rem;
+    transform: translateZ(-1.5px) scale(2.5);
+    min-height:220vh;
+}
+
+.red2 {
+    background: 
+    radial-gradient(circle at 20% 60%, #fc4a8274 , #08080b00 25%);
+    background-blend-mode: screen;
+    width: 100%;
+    height: 100rem;
+    transform: translateZ(-1.5px) scale(2.5);
+    min-height:220vh;
+}
+
+.blue2 {
+    background: 
+    radial-gradient(circle at 80% 80%, #5154fd80 , #08070b0b 20%);
+    background-blend-mode: screen;
+    width: 100%;
+    height: 100rem;
+    transform: translateZ(-1px) scale(2);
+    min-height:220vh;
+}
+
+
+
+  
+.parallax{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+    
+}
+  
+
+
+.blur{
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);     
+}
+
+.glass_box{
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+/* wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww use the blur effect just above this (needs to be tested) */
+
+    
+/* wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww Nav area */
+
+#nav_bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    gap: 20px;
+}
+
+#title{
+    font-size: 2rem;
+}
+
+/* #title{
+    font-size: 2rem;
+        background-color: transparent;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 50px;
+        box-shadow: 0 0 5px rgba(0,0,0,0.1);
+        cursor: pointer;
+        position: relative;
+    
+    }
+
+
+
+    #title:before {
+        content: "";
+        position: absolute;
+        top: -5px;
+        left: -5px;
+        right: -5px;
+        bottom: -5px;
+        z-index: -1;
+        border-radius: 50px;
+        background: linear-gradient(to right, #ff6f61, #ff6f61);
+        filter: blur(10px);
+        transition: all 0.3s ease-out;
+      }
+      
+      #title:hover:before {
+        filter: blur(0px);
+      } */
+
+.nav_buttons{
+    display: flex;
+    align-items: center;
+    gap: 20px}
+
+.nav_link_text{
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: white;
+}
+#stroke_nav_contact_button{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    background: linear-gradient(to bottom right, var(--accent-pink), var(--accent-blue));
+    padding: 2px;
+
+}
+.inner_nav_contact{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    background: var(--background-notblack);
+    padding: 10px;
+    color: white;
+    white-space: nowrap;
+}
+
+/* wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww face and name */
+#main_man{
+    padding-top: var(--inter_section_padding);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+
+}
+/* 
+.placeholder-image {
+    width: 400px; 
+    height: 400px; 
+    background-color: #ccc; /
+    background-image: linear-gradient(45deg, #e0e0e0 25%, #e0e0e0 75%, #f5f5f5 75%, #f5f5f5); 
+    background-size: 50px 50px; 
+    border: 1px solid #ddd; 
+  } */
+   
+#name_do{
+    flex: 1;
+}
+#face_person{
+    flex: 1;
+}
+
+#main_face{
+    object-fit: cover; 
+    border-radius: 16px;
+}
+
+#face_person {
+    height: auto;
+    flex: 1;
+    max-width: 50%; 
+
+}
+
+
+#surname_big{
+    font-size: 10rem;
+    font-size: clamp(4.5rem, 10vw, 15rem); 
+    text-align: left;
+}
+
+#main_face{
+    width: 100%;
+    height: auto; 
+    max-height: 80vh; 
+    object-fit: contain;
+}
+
+/* 
+    .responsive-text {
+        font-size: clamp(1rem, 2.5vw, 2rem); Font size that adjusts between 1rem and 2rem based on viewport width 
+    } */
+
+#what_engineer{
+    color: linear-gradient();
+    background-image: linear-gradient(to bottom right, var(--accent-pink) , var(--accent-blue));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    background-clip: text;
+    display: inline-block;
+    font-size: clamp(2rem, 3vw, 4.5rem);
+    font-weight: bold;
+}
+
+/* wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww Projects */
+#projects_wrapper{
+   padding-top: var(--inter_section_padding); }
+
+#project_subhead{
+    font-size: 1.5rem;
+    font-weight: 600;}
+
+#project_line{
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+    width: 100%;
+    gap: 10px;
+    padding-top: 12px;
+
+}
+
+.project_box{
+    background-color: var(--dark-box);
+    flex: 1;
+    border-radius: 12px;
+    padding: 0.5vw;
+}
+.project_photo img{
+    width: 100%; /* Width of each box */
+    height: auto; /* Height of each box */
+    border-radius: 8px;
+
+}
+
+.project_info_wrapper{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 0.25vw;
+}
+.project_arrow{
+    display: flex;
+    background-color: var(--darkish-box);
+    border-radius: 50%;
+    padding: 4px;
+}
+
+
+
+/*     fjasjfklasjfklja ajfklasjf sadj/////  add a min width to make the boxes loop around if needed also make images full size no mater scale*/
+
+
+/* wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww full stack */
+
+#full_stack_wrapper{
+    padding-top: var(--inter_section_padding);}
+    
+.heading{
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    font-weight: 600;}
+
+.heading_paragraph{
+    display: flex;
+    justify-content: center;
+    padding-top: 12px;}
+
+.full_stack_grid {
+    padding-top: 12px;
+    display: grid;
+    gap: 10px;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+}
+
+
+
+
+.stack_box{
+    background-color: var(--dark-box);
+    flex: 1;
+    border-radius: 12px;
+    padding: 0.5vw;
+}
+.tiered_solution_photo{
+    padding: 6px;
+    background-color: var(--darkish-box);
+    border-radius: 10px;
+    width: 50%;
+}
+
+.tiered_solution_photo img{
+    width: 100%; /* Width of each box */
+    height: auto; /* Height of each box */
+    border-radius: 8px;
+}
+
+.project_stack_wrapper{
+    /* display: flex;
+    justify-content: space-between; */
+    padding-top: 6px;
+}
+.project_text_head{
+    font-weight: 600;
+}
+.project_text_para{
+    font-weight: 200;
+    font-size: 0.75rem;
+    color: var(--off-white);
+}
+
+
+  /* wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww links */
+#social_links_wrapper{
+    padding-top: var(--inter_section_padding);
+}
+.links_heading{
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.link_box {
+    display: flex;
+    justify-content: space-around; 
+    align-items: center; /* Center items vertically */
+    padding: 20px; /* Padding around the container */
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 24px;
+}
+
+.link_flex{
+  flex: 1; /* Each item takes equal space */
+  display: flex; /* Flexbox for centering the SVG */
+  justify-content: center; /* Center SVG horizontally */
+  align-items: center; /* Center SVG vertically */
+  max-width: 150px; /* Set max width for the images */
+}
+.link-item {
+  width: 100%; /* Make SVG take up full width of flex-item */
+  height: auto; /* Maintain aspect ratio */
+  max-width: 100px; /* Ensures images are the same size */
+}
+
+/* wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww work with */
+
+#work_with_wrapper{
+    padding-block: var(--inter_section_padding);
+}
+#work_with_box{
+    background: linear-gradient(to bottom right, var(--accent-pink), var(--accent-blue));
+    border-radius: 24px;
+}
+
+#rhetorical_q {
+    padding-top: 24px;
+    display: flex;
+    justify-content: center;
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 200;
+}
+
+#call_to_act{
+    padding-top: 12px;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 3rem;
+}
+
+#call_to_act_contact{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+.call_to_act_contact_button{
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    justify-content: center;
+    border-radius: 100px;
+    background: var(--background-notblack);
+    padding-block: 12px;
+    padding-inline: 24px;
+}
+
+
+/* wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww mobile screen configuration */
+@media (max-width: 768px) {
+    .full_stack_grid {
+      grid-template-columns: repeat(2, 1fr); /* 2 columns */
+      grid-template-rows: repeat(3, 1fr); /* 3 rows */
+    }
+    .grand_wrap{
+        padding-top: 40px;
+        padding-inline: 6px;
+    }
+}
+
+
+
+.wrapper_section{
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 10%;
+}
+
+
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        /* transform: translateX(-500px); */
+        /* clip-path: inset(100% 100% 0 0); */
+        scale: 0.5;
+      }
+      to {
+        opacity: 1;
+        /* clip-path: inset(0 0 0 0); */
+        /* transform: translateX(0px); */
+        scale: 1;
+
+    }
+}
